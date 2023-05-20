@@ -1,7 +1,14 @@
 <div class="w-100 h-100">
-  <div style="width: fit-content; margin: auto;">
-    <suit-datepicker></suit-datepicker>
-  </div>
+
+  <form [formGroup]="form">
+    <div class="suit-container-control">
+      <label>Test</label>
+      <input type="text" class="suit-control" formControlName="input-text">
+    </div>
+
+    <button type="submit">TEST</button>
+  </form>
+
 </div>
 
 <div>

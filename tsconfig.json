@@ -26,8 +26,8 @@
       "@suit/popup": [
         "projects/suit/popup/public-api.ts"
       ],
-      "@suit/datepicker": [
-        "projects/suit/datepicker/public-api.ts"
+      "@suit/forms": [
+        "projects/suit/forms/public-api.ts"
       ]
     }
   }

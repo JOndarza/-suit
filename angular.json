@@ -167,6 +167,37 @@
           }
         }
       }
+    },
+    "@suit/forms": {
+      "projectType": "library",
+      "root": "projects/suit/forms",
+      "sourceRoot": "projects/suit/forms/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/suit/forms/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/suit/forms/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/suit/forms/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/suit/forms/src/test.ts",
+            "tsConfig": "projects/suit/forms/tsconfig.spec.json",
+            "karmaConfig": "projects/suit/forms/karma.conf.js"
+          }
+        }
+      }
     }
   }
 }
