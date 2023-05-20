@@ -1,0 +1,30 @@
+{
+  "name": "@suit/common",
+  "license": "MIT",
+  "version": "0.0.1",
+  "repository": "https://github.com/JOndarza/suit",
+  "keywords": [
+    "angular",
+    "components",
+    "angular-components",
+    "services",
+    "tools",
+    "angular2",
+    "angular4",
+    "angular6",
+    "angular8",
+    "angular10",
+    "angular12"
+  ],
+  "engines": {
+    "node": ">= 12.20.0",
+    "npm": ">= 6.0.0"
+  },
+  "peerDependencies": {
+    "@angular/common": ">=13.0.0 <14.0.0",
+    "@angular/core": ">=13.0.0 <14.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  }
+}

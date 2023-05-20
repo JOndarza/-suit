@@ -1,0 +1,20 @@
+<div class="w-100 h-100">
+  <div style="width: fit-content; margin: auto;">
+    <suit-datepicker></suit-datepicker>
+  </div>
+</div>
+
+<div>
+  <div class="w-100 h-100" (click)="popup.toggle()">
+    <div #target id="test" style="cursor: pointer; width: fit-content; background-color: aqua; margin: auto;">
+      Open popup
+    </div>
+  </div>
+
+  <suit-popup #popup [target]="target">
+    <div>
+      POPUP OPENED!
+      <button (click)="popup.close()">Close</button>
+    </div>
+  </suit-popup>
+</div>
