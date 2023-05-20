@@ -167,38 +167,6 @@
           }
         }
       }
-    },
-    "@suit/datepicker": {
-      "projectType": "library",
-      "root": "projects/suit/datepicker",
-      "sourceRoot": "projects/suit/datepicker/src",
-      "prefix": "lib",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-angular:ng-packagr",
-          "options": {
-            "project": "projects/suit/datepicker/ng-package.json"
-          },
-          "configurations": {
-            "production": {
-              "tsConfig": "projects/suit/datepicker/tsconfig.lib.prod.json"
-            },
-            "development": {
-              "tsConfig": "projects/suit/datepicker/tsconfig.lib.json"
-            }
-          },
-          "defaultConfiguration": "production"
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/suit/datepicker/src/test.ts",
-            "tsConfig": "projects/suit/datepicker/tsconfig.spec.json",
-            "karmaConfig": "projects/suit/datepicker/karma.conf.js"
-          }
-        }
-      }
     }
-  },
-  "defaultProject": "demo"
+  }
 }
